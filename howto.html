@@ -30,23 +30,44 @@
             <a class="nav-link" href="index.html">이낙연 후보</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="hwang.html">황교안 후보</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="howto.html">분석방법</a>
+            <a class="nav-link" href="hwang.html">황교안 후보</a>
+          </li><li class="nav-item">
+            <a class="nav-link active" href="howto.html">분석방법</a>
           </li>
         </ul>
         <br>
+        <h4>분석에 사용된 데이터</h4>
+        <br>
+        <p>
+          후보자 공동토론회와 방송기자클럽 토론회에서의 두 후보자의 발언 내용을 분석<br>
+          <ul>
+            <li>2020년 4월 2일 방송기자클럽 토론회</li>
+            <li>2020년 4월 7일 후보자 합동TV토론</li></loi>
+          </ul>
+        </p>
+        <br>
         <h4>단어의 빈도수 분석</h4>
-        <hr>
-        <img src="images/hwang-keyword.png">
         <br>
-        <br>
-        <br>
+        <p>
+          발언에서 가장 많이 사용한 단어를 명사 위주로 추출하여 빈도수를 분석하는 방법.<br>
+          가장 많이 사용하는 단어가 후보자의 주된 사고를 형성하고 있다고 볼 수 있음.<br>
+          물론 언어습관에 따라 특정 단어의 빈도수가 높아질 수 있음.<br>
+          예를 들어 두 후보자 모두 “말씀”과 같은 단어가 빈도수가 높게 나타났는데, 이런 단어는 분석에서 제외 함.
+        </p>
         <br>
         <h4>단어의 연결망 분석</h4>
-        <hr>
-        <svg width="960" height="700"></svg>
+        <br>
+        <p>
+          한번의 발언을 하나의 단위로 보아 그 안에서 공동으로 출현한 단어를 네트워크로 분석. <br>
+          즉 선으로 연결된 두개의 단어는 한번의 발언에 공통적으로 나타난 단어라는 뜻. <br>
+          단어를 하나만 보면 그 단어가 언급된 맥락을 알기 어렵지만, <br>
+          동시에 출현한 여러 개의 단어를 한꺼번에 보면 그 단어가 사용된 맥락을 알 수 있음. <br>
+          예를 들어, “여성”이라는 단어 하나만으로는 후보자의 여성에 대한 인식을 알 수 없지만, <br>
+          “여성”과 연결된 단어가 “저출산”, 지원” 등과 연결이 되어있다면 후보자의 여성 정책과 관련한 생각을 파악할 수 있음.<br>
+          연결된 선의 두께는 같이 언급된 단어의 빈도를 의미함.
+
+        </p>
+        
       </div>
 
     </main><!-- /.container -->
@@ -65,10 +86,6 @@
     <script>window.jQuery || document.write('<script src="web-src/assets/js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
     <script src="web-src/assets/js/vendor/popper.min.js"></script>
     <script src="web-src/dist/js/bootstrap.min.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
-    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-    <script src="js/ds-hwang.js"></script>
 
   </body>
 </html>
