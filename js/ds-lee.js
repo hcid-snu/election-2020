@@ -47,11 +47,6 @@ link
       	tooltip.transition()
         	.duration(300)
         	.style("opacity", .8);
-      	tooltip.html("Source:"+ d.source.id + 
-                     "<p/>Target:" + d.target.id +
-                    "<p/>Strength:"  + d.value)
-        	.style("left", (d3.event.pageX) + "px")
-        	.style("top", (d3.event.pageY + 10) + "px");
     	})
     	.on("mouseout.tooltip", function() {
 	      tooltip.transition()
